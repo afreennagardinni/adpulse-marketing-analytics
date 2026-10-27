@@ -1,0 +1,6 @@
+{
+  "name": "AdPulse Neumorphic Marketing Analytics",
+  "description": "Tactile neumorphic data analyst dashboard visualizing key performance indicators for marketing campaigns with interactive charts and real-time database streaming.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,136 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --neu-bg: #eef2f7;
+    --neu-surface: #eef2f7;
+    --neu-dark-shadow: #cbd5e1;
+    --neu-light-shadow: #ffffff;
+    --neu-accent: #2563eb;
+  }
+
+  .dark {
+    --neu-bg: #161a22;
+    --neu-surface: #181d26;
+    --neu-dark-shadow: #0e1117;
+    --neu-light-shadow: #232a37;
+    --neu-accent: #3b82f6;
+  }
+
+  body {
+    background-color: var(--neu-bg);
+    font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    color: #1e293b;
+    transition: background-color 0.25s ease, color 0.25s ease;
+  }
+
+  .dark body {
+    color: #f1f5f9;
+  }
+}
+
+/* Light Neumorphism Utilities */
+.neu-flat {
+  background: #eef2f7;
+  box-shadow: 6px 6px 14px #cbd5e1, -6px -6px 14px #ffffff;
+}
+
+.neu-flat-sm {
+  background: #eef2f7;
+  box-shadow: 3px 3px 8px #cbd5e1, -3px -3px 8px #ffffff;
+}
+
+.neu-sunken {
+  background: #eef2f7;
+  box-shadow: inset 3px 3px 6px #cbd5e1, inset -3px -3px 6px #ffffff;
+}
+
+.neu-sunken-sm {
+  background: #eef2f7;
+  box-shadow: inset 2px 2px 4px #cbd5e1, inset -2px -2px 4px #ffffff;
+}
+
+.neu-convex {
+  background: linear-gradient(145deg, #ffffff, #d9e2ec);
+  box-shadow: 5px 5px 12px #cbd5e1, -5px -5px 12px #ffffff;
+}
+
+.neu-btn {
+  background: #eef2f7;
+  box-shadow: 4px 4px 10px #cbd5e1, -4px -4px 10px #ffffff;
+  transition: all 0.15s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.neu-btn:hover {
+  box-shadow: 2px 2px 6px #cbd5e1, -2px -2px 6px #ffffff;
+}
+
+.neu-btn:active, .neu-btn-active {
+  box-shadow: inset 3px 3px 6px #cbd5e1, inset -3px -3px 6px #ffffff !important;
+}
+
+/* Dark Mode Neumorphism Utilities */
+.dark .neu-flat {
+  background: #181d26;
+  box-shadow: 6px 6px 16px #0e1117, -6px -6px 16px #242b38;
+}
+
+.dark .neu-flat-sm {
+  background: #181d26;
+  box-shadow: 3px 3px 8px #0e1117, -3px -3px 8px #242b38;
+}
+
+.dark .neu-sunken {
+  background: #151921;
+  box-shadow: inset 3px 3px 7px #0e1117, inset -3px -3px 7px #232936;
+}
+
+.dark .neu-sunken-sm {
+  background: #151921;
+  box-shadow: inset 2px 2px 4px #0e1117, inset -2px -2px 4px #232936;
+}
+
+.dark .neu-convex {
+  background: linear-gradient(145deg, #1b212c, #151921);
+  box-shadow: 5px 5px 12px #0e1117, -5px -5px 12px #242b38;
+}
+
+.dark .neu-btn {
+  background: #181d26;
+  box-shadow: 4px 4px 10px #0e1117, -4px -4px 10px #242b38;
+}
+
+.dark .neu-btn:hover {
+  box-shadow: 2px 2px 6px #0e1117, -2px -2px 6px #242b38;
+}
+
+.dark .neu-btn:active, .dark .neu-btn-active {
+  box-shadow: inset 3px 3px 6px #0e1117, inset -3px -3px 6px #242b38 !important;
+}
+
+/* Neumorphic Dial & Progress Bars */
+.neu-groove {
+  background: #e2e8f0;
+  box-shadow: inset 2px 2px 4px #cbd5e1, inset -2px -2px 4px #ffffff;
+}
+
+.dark .neu-groove {
+  background: #12151b;
+  box-shadow: inset 2px 2px 4px #0a0c10, inset -2px -2px 4px #202632;
+}
+
+/* Custom scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 9999px;
+}
+.dark ::-webkit-scrollbar-thumb {
+  background: #334155;
+}
